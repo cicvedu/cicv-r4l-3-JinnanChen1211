@@ -70,6 +70,17 @@ config SAMPLE_RUST_MISCDEV
 
 	  If unsure, say N.
 
+config SAMPLE_RUST_HELLOWORLD
+        tristate "Helloworld device"
+        help
+        ¦ This option builds the Rust helloworld device sample.
+
+        ¦ To compile this as a module, choose M here:
+        ¦ the module will be called rust_helloworld.
+
+        ¦ If unsure, say N.
+
+
 config SAMPLE_RUST_STACK_PROBING
 	tristate "Stack probing"
 	help

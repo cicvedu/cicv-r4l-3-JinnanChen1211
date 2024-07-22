@@ -1,0 +1,93 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+Data	r4l_e1000_demo.rs	/^    type Data = Box<E1000DrvPrvData>;$/;"	t	language:Rust	implementation:E1000Drv
+Data	r4l_e1000_demo.rs	/^    type Data = Box<IrqPrivateData>;$/;"	t	language:Rust	implementation:E1000InterruptHandler
+Data	r4l_e1000_demo.rs	/^    type Data = Box<NetDevicePrvData>;$/;"	t	language:Rust	implementation:NapiHandler
+Data	r4l_e1000_demo.rs	/^    type Data = Box<NetDevicePrvData>;$/;"	t	language:Rust	implementation:NetDevice
+DmaAllocSlice	ring_buf.rs	/^impl<T> DmaAllocSlice<T> {$/;"	c	language:Rust
+DmaAllocSlice	ring_buf.rs	/^pub(crate) struct DmaAllocSlice<T> {$/;"	s	language:Rust
+E1000Drv	r4l_e1000_demo.rs	/^impl pci::Driver for E1000Drv {$/;"	c	language:Rust
+E1000Drv	r4l_e1000_demo.rs	/^struct E1000Drv {}$/;"	s	language:Rust
+E1000DrvPrvData	r4l_e1000_demo.rs	/^impl driver::DeviceRemoval for E1000DrvPrvData {$/;"	c	language:Rust
+E1000DrvPrvData	r4l_e1000_demo.rs	/^struct E1000DrvPrvData {$/;"	s	language:Rust
+E1000InterruptHandler	r4l_e1000_demo.rs	/^impl kernel::irq::Handler for E1000InterruptHandler {$/;"	c	language:Rust
+E1000InterruptHandler	r4l_e1000_demo.rs	/^struct E1000InterruptHandler {}$/;"	s	language:Rust
+E1000KernelMod	r4l_e1000_demo.rs	/^impl Drop for E1000KernelMod {$/;"	c	language:Rust
+E1000KernelMod	r4l_e1000_demo.rs	/^impl kernel::Module for E1000KernelMod {$/;"	c	language:Rust
+E1000KernelMod	r4l_e1000_demo.rs	/^struct E1000KernelMod {$/;"	s	language:Rust
+E1000Ops	e1000_ops.rs	/^impl E1000Ops {$/;"	c	language:Rust
+E1000Ops	e1000_ops.rs	/^pub(crate) struct E1000Ops {$/;"	s	language:Rust
+INCLUDE_VERMAGIC	r4l_e1000_demo.mod.c	/^#define INCLUDE_VERMAGIC$/;"	d	language:C	file:
+IrqPrivateData	r4l_e1000_demo.rs	/^struct IrqPrivateData {$/;"	s	language:Rust
+KDIR	Makefile	/^KDIR ?= ..\/linux$/;"	m	language:Make
+NapiHandler	r4l_e1000_demo.rs	/^impl net::NapiPoller for NapiHandler {$/;"	c	language:Rust
+NapiHandler	r4l_e1000_demo.rs	/^struct NapiHandler{}$/;"	s	language:Rust
+NetDevice	r4l_e1000_demo.rs	/^impl NetDevice {$/;"	c	language:Rust
+NetDevice	r4l_e1000_demo.rs	/^impl net::DeviceOperations for NetDevice {$/;"	c	language:Rust
+NetDevice	r4l_e1000_demo.rs	/^struct NetDevice {}$/;"	s	language:Rust
+NetDevicePrvData	r4l_e1000_demo.rs	/^struct NetDevicePrvData {$/;"	s	language:Rust
+NetDevicePrvData	r4l_e1000_demo.rs	/^unsafe impl Send for NetDevicePrvData {}$/;"	c	language:Rust
+NetDevicePrvData	r4l_e1000_demo.rs	/^unsafe impl Sync for NetDevicePrvData {}$/;"	c	language:Rust
+RingBuf	ring_buf.rs	/^impl<T> RingBuf<T> {$/;"	c	language:Rust
+RingBuf	ring_buf.rs	/^pub(crate) struct RingBuf<T> {$/;"	s	language:Rust
+RxDescEntry	hw_defs.rs	/^pub(crate) struct RxDescEntry {$/;"	s	language:Rust
+RxRingBuf	ring_buf.rs	/^pub(crate) type RxRingBuf = RingBuf<RxDescEntry>;$/;"	t	language:Rust
+SkbDma	ring_buf.rs	/^pub(crate) type SkbDma = (dma::MapSingle::<u8>, ARef<SkBuff>);$/;"	t	language:Rust
+This is a project trying to port Intel E1000 driver to Rust For Linux in 7 days.	README.md	/^## This is a project trying to port Intel E1000 driver to Rust For Linux in 7 days.$/;"	s	language:Markdown
+TxDescEntry	hw_defs.rs	/^pub(crate) struct TxDescEntry {$/;"	s	language:Rust
+TxRingBuf	ring_buf.rs	/^pub(crate) type TxRingBuf = RingBuf<TxDescEntry>;/;"	t	language:Rust
+_dev	r4l_e1000_demo.rs	/^    _dev: Pin<Box<driver::Registration::<pci::Adapter<E1000Drv>>>>,$/;"	m	language:Rust	struct:E1000KernelMod
+_irq_handler	r4l_e1000_demo.rs	/^    _irq_handler: AtomicPtr<kernel::irq::Registration<E1000InterruptHandler>>$/;"	m	language:Rust	struct:NetDevicePrvData
+_netdev_reg	r4l_e1000_demo.rs	/^    _netdev_reg: net::Registration<NetDevice>,$/;"	m	language:Rust	struct:E1000DrvPrvData
+as_desc_slice	ring_buf.rs	/^    pub(crate) fn as_desc_slice(&mut self) -> &mut [T] {$/;"	P	language:Rust	implementation:DmaAllocSlice	signature:(&mut self) -> &mut [T]
+consts	r4l_e1000_demo.rs	/^mod consts;$/;"	n	language:Rust
+count	ring_buf.rs	/^    count: usize,$/;"	m	language:Rust	struct:DmaAllocSlice
+default	Makefile	/^default:$/;"	t	language:Make
+desc	ring_buf.rs	/^    desc: dma::Allocation::<T>,$/;"	m	language:Rust	struct:DmaAllocSlice
+dev	r4l_e1000_demo.rs	/^    dev: Arc<device::Device>,$/;"	m	language:Rust	struct:NetDevicePrvData
+device_remove	r4l_e1000_demo.rs	/^    fn device_remove(&self) {$/;"	P	language:Rust	implementation:E1000DrvPrvData	signature:(&self)
+drop	r4l_e1000_demo.rs	/^    fn drop(&mut self) {$/;"	P	language:Rust	implementation:E1000KernelMod	signature:(&mut self)
+e1000_configure	e1000_ops.rs	/^    pub(crate) fn e1000_configure(&self, rx_ring: &RxRingBuf, tx_ring: &TxRingBuf) -> Result {$/;"	P	language:Rust	implementation:E1000Ops	signature:(&self, rx_ring: &RxRingBuf, tx_ring: &TxRingBuf) -> Result
+e1000_configure_rx	e1000_ops.rs	/^    fn e1000_configure_rx(&self, rx_ring: &RxRingBuf) -> Result {$/;"	P	language:Rust	implementation:E1000Ops	signature:(&self, rx_ring: &RxRingBuf) -> Result
+e1000_configure_tx	e1000_ops.rs	/^    fn e1000_configure_tx(&self, tx_ring: &TxRingBuf) -> Result {$/;"	P	language:Rust	implementation:E1000Ops	signature:(&self, tx_ring: &TxRingBuf) -> Result
+e1000_hw_ops	r4l_e1000_demo.rs	/^    e1000_hw_ops: Arc<E1000Ops>,$/;"	m	language:Rust	struct:IrqPrivateData
+e1000_hw_ops	r4l_e1000_demo.rs	/^    e1000_hw_ops: Arc<E1000Ops>,$/;"	m	language:Rust	struct:NetDevicePrvData
+e1000_ops	r4l_e1000_demo.rs	/^mod e1000_ops;$/;"	n	language:Rust
+e1000_read_interrupt_state	e1000_ops.rs	/^    pub(crate) fn e1000_read_interrupt_state(&self) -> u32 {$/;"	P	language:Rust	implementation:E1000Ops	signature:(&self) -> u32
+e1000_read_rx_queue_head	e1000_ops.rs	/^    pub(crate) fn e1000_read_rx_queue_head(&self) -> u32 {$/;"	P	language:Rust	implementation:E1000Ops	signature:(&self) -> u32
+e1000_read_rx_queue_tail	e1000_ops.rs	/^    pub(crate) fn e1000_read_rx_queue_tail(&self) -> u32 {$/;"	P	language:Rust	implementation:E1000Ops	signature:(&self) -> u32
+e1000_read_tx_queue_head	e1000_ops.rs	/^    pub(crate) fn e1000_read_tx_queue_head(&self) -> u32 {$/;"	P	language:Rust	implementation:E1000Ops	signature:(&self) -> u32
+e1000_read_tx_queue_tail	e1000_ops.rs	/^    pub(crate) fn e1000_read_tx_queue_tail(&self) -> u32 {$/;"	P	language:Rust	implementation:E1000Ops	signature:(&self) -> u32
+e1000_recycle_tx_queue	r4l_e1000_demo.rs	/^    fn e1000_recycle_tx_queue(dev: &net::Device, data: &NetDevicePrvData) {$/;"	P	language:Rust	implementation:NetDevice	signature:(dev: &net::Device, data: &NetDevicePrvData)
+e1000_reset_hw	e1000_ops.rs	/^    pub(crate) fn e1000_reset_hw(&self) -> Result{$/;"	P	language:Rust	implementation:E1000Ops	signature:(&self) -> Result
+e1000_setup_all_rx_resources	r4l_e1000_demo.rs	/^    fn e1000_setup_all_rx_resources(dev: &net::Device, data: &NetDevicePrvData) -> Result<RxRing/;"	P	language:Rust	implementation:NetDevice	signature:(dev: &net::Device, data: &NetDevicePrvData) -> Result<RxRingBuf>
+e1000_setup_all_tx_resources	r4l_e1000_demo.rs	/^    fn e1000_setup_all_tx_resources(data: &NetDevicePrvData) -> Result<TxRingBuf> {$/;"	P	language:Rust	implementation:NetDevice	signature:(data: &NetDevicePrvData) -> Result<TxRingBuf>
+e1000_write_flush	e1000_ops.rs	/^    fn e1000_write_flush(&self){$/;"	P	language:Rust	implementation:E1000Ops	signature:(&self)
+e1000_write_reg_io	e1000_ops.rs	/^    fn e1000_write_reg_io(&self, value: u32, addr: usize) -> Result {$/;"	P	language:Rust	implementation:E1000Ops	signature:(&self, value: u32, addr: usize) -> Result
+e1000_write_rx_queue_tail	e1000_ops.rs	/^    pub(crate) fn e1000_write_rx_queue_tail(&self, val: u32) {$/;"	P	language:Rust	implementation:E1000Ops	signature:(&self, val: u32)
+e1000_write_tx_queue_tail	e1000_ops.rs	/^    pub(crate) fn e1000_write_tx_queue_tail(&self, val: u32) {$/;"	P	language:Rust	implementation:E1000Ops	signature:(&self, val: u32)
+get_cpu_addr	ring_buf.rs	/^    pub(crate) fn get_cpu_addr(&self) -> usize {$/;"	P	language:Rust	implementation:DmaAllocSlice	signature:(&self) -> usize
+get_dma_addr	ring_buf.rs	/^    pub(crate) fn get_dma_addr(&self) -> usize {$/;"	P	language:Rust	implementation:DmaAllocSlice	signature:(&self) -> usize
+get_stats64	r4l_e1000_demo.rs	/^    fn get_stats64(_netdev: &net::Device, _data: &NetDevicePrvData, stats: &mut net::RtnlLinkSta/;"	P	language:Rust	implementation:NetDevice	signature:(_netdev: &net::Device, _data: &NetDevicePrvData, stats: &mut net::RtnlLinkStats64)
+handle_irq	r4l_e1000_demo.rs	/^    fn handle_irq(data: &IrqPrivateData) -> kernel::irq::Return {$/;"	P	language:Rust	implementation:E1000InterruptHandler	signature:(data: &IrqPrivateData) -> kernel::irq::Return
+hw_defs	r4l_e1000_demo.rs	/^mod hw_defs;$/;"	n	language:Rust
+init	r4l_e1000_demo.rs	/^    fn init(name: &'static CStr, module: &'static ThisModule) -> Result<Self> {$/;"	P	language:Rust	implementation:E1000KernelMod	signature:(name: &'static CStr, module: &'static ThisModule) -> Result<Self>
+irq	r4l_e1000_demo.rs	/^    irq: u32,$/;"	m	language:Rust	struct:NetDevicePrvData
+napi	r4l_e1000_demo.rs	/^    napi: Arc<net::Napi>,$/;"	m	language:Rust	struct:IrqPrivateData
+napi	r4l_e1000_demo.rs	/^    napi: Arc<net::Napi>,$/;"	m	language:Rust	struct:NetDevicePrvData
+new	ring_buf.rs	/^    pub(crate) fn new(desc: dma::Allocation::<T>, len: usize) -> Self {$/;"	P	language:Rust	implementation:RingBuf	signature:(desc: dma::Allocation::<T>, len: usize) -> Self
+open	r4l_e1000_demo.rs	/^    fn open(dev: &net::Device, data: &NetDevicePrvData) -> Result {$/;"	P	language:Rust	implementation:NetDevice	signature:(dev: &net::Device, data: &NetDevicePrvData) -> Result
+poll	r4l_e1000_demo.rs	/^    fn poll($/;"	P	language:Rust	implementation:NapiHandler	signature:( _napi: &net::Napi, _budget: i32, dev: &net::Device, data: &NetDevicePrvData, ) -> i32
+probe	r4l_e1000_demo.rs	/^    fn probe(dev: &mut pci::Device, id: core::option::Option<&Self::IdInfo>) -> Result<Self::Dat/;"	P	language:Rust	implementation:E1000Drv	signature:(dev: &mut pci::Device, id: core::option::Option<&Self::IdInfo>) -> Result<Self::Data>
+remove	r4l_e1000_demo.rs	/^    fn remove(data: &Self::Data) {$/;"	P	language:Rust	implementation:E1000Drv	signature:(data: &Self::Data)
+ring_buf	r4l_e1000_demo.rs	/^mod ring_buf;$/;"	n	language:Rust
+rust-analyzer	README.md	/^## rust-analyzer$/;"	s	language:Markdown
+rx_ring	r4l_e1000_demo.rs	/^    rx_ring: SpinLock<Option<RxRingBuf>>,$/;"	m	language:Rust	struct:NetDevicePrvData
+start_xmit	r4l_e1000_demo.rs	/^    fn start_xmit(skb: &net::SkBuff, dev: &net::Device, data: &NetDevicePrvData) -> net::NetdevT/;"	P	language:Rust	implementation:NetDevice	signature:(skb: &net::SkBuff, dev: &net::Device, data: &NetDevicePrvData) -> net::NetdevTx
+stop	r4l_e1000_demo.rs	/^    fn stop(_dev: &net::Device, _data: &NetDevicePrvData) -> Result {$/;"	P	language:Rust	implementation:NetDevice	signature:(_dev: &net::Device, _data: &NetDevicePrvData) -> Result
+tx_ring	r4l_e1000_demo.rs	/^    tx_ring: SpinLock<Option<TxRingBuf>>,$/;"	m	language:Rust	struct:NetDevicePrvData
